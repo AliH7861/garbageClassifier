@@ -1,0 +1,19 @@
+# Ignore user images folder
+user_Images/
+
+# Ignore the database file
+mydb.db
+
+# Ignore the env files
+.env
+
+# OS-specific stuff
+.DS_Store
+Thumbs.db
+
+# Model files (do NOT commit big models!)
+my_model.keras
+my_model.h5
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints

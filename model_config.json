@@ -1,0 +1,8 @@
+{
+    "img_height": 180, 
+    "img_width": 180, 
+    "class_names": ["biological", "brown-glass", "cardboard", "clothes", "green-glass", "metal", "paper", "plastic", "shoes", "trash", "white-glass"], 
+    "class_to_bin": {"biological": "Green bin", "brown-glass": "Dark blue box", "green-glass": "Dark blue box", "white-glass": "Dark blue box", "metal": "Dark blue box", 
+                    "plastic": "Dark blue box", "cardboard": "Light blue box", "paper": "Light blue box", "clothes": "Black garbage", "shoes": "Black garbage", "trash": "Black garbage"}, 
+    "bin_to_pic": {"Green bin": "compost.jpg", "Dark blue box": "darkblue.jpg", "Light blue box": "lightblue.jpg", "Black garbage": "garbagebag.jpg"}
+}
