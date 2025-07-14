@@ -181,15 +181,21 @@ def test_bin_filenames_and_defaults():
 # --- 5. Signup/Login flow logic tests (via requests-mock) ---
 #
 
-def test_signup_flow(requests_mock):
+def test_signup_flow(mocker):
     url = "http://localhost:8000/createUser"
-    requests_mock.post(url, status_code=200, json={"success":True})
+    mock_post = mocker.patch("requests.post")
+    mock_post.return_value.status_code = 200
+    mock_post.return_value.json.return_value = {"success": True}
+
     resp = requests.post(url, json={"username":"a","password":"b"})
     assert resp.status_code == 200
 
-def test_login_flow(requests_mock):
+def test_login_flow(mocker):
     url = "http://localhost:8000/login"
-    requests_mock.post(url, status_code=200, json={"user_id":"u","id":1})
+    mock_post = mocker.patch("requests.post")
+    mock_post.return_value.status_code = 200
+    mock_post.return_value.json.return_value = {"user_id":"u","id":1}
+
     resp = requests.post(url, json={"username":"u","password":"p"})
     assert resp.status_code == 200
     assert resp.json()["user_id"] == "u"

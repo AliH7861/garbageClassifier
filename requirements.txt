@@ -11,9 +11,8 @@ pandas
 matplotlib
 plotly
 pytest
-pytest-requests-mock
 httpx
-pytest-mock             # For mock testing
+pytest-mock   
 pytest-cov              # For coverage report
 streamlit
 streamlit-autorefresh   # If you use it
