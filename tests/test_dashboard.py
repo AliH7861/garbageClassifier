@@ -1,9 +1,11 @@
 import os
+import sys
 import pytest
 from datetime import datetime, date
 from fastapi.testclient import TestClient
 import requests
 
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # Import your FastAPI app and database models
 from main import app, SessionLocal
 from database import SubmissionData, TestingTable2, TableData
