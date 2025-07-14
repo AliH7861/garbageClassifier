@@ -183,3 +183,15 @@ This project is licensed under the [MIT License](LICENSE).
 
 You are free to use, modify, and distribute this software for personal or commercial purposes,  
 provided that you include the original license file in any redistributed versions.
+
+## Contact
+
+Have questions, feedback, or ideas?
+
+We’d love to hear from you!
+
+
+- 📧 alihusen2k27@gmail.com
+- 🌐 GitHub: [github.com/AliH7861](https://github.com/yourusername)  
+
+For bug reports or feature requests, please [open an issue](https://github.com/yourusername/yourrepo/issues).
