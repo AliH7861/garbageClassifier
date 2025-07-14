@@ -44,6 +44,7 @@ EcoBin AI is a smart web application that helps you classify household waste usi
 ### Installation
 
 Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/ecobin-ai.git
 cd ecobin-ai
