@@ -40,9 +40,11 @@ if not st.session_state.get("logged_in", False):
 
     
 img = Image.open('placeholder.jpg')
-dashboard_url = "http://localhost:8501/dashboard"
-updatepicture_url = "http://localhost:8501/pictures"
-signOut_url = "http://localhost:8501"
+dashboard_url = "http://localhost:8080/dashboard"
+updatepicture_url = "http://localhost:8080/pictures"
+signOut_url = "http://localhost:8080"
+
+
 # Convert to base64
 buffered = io.BytesIO()
 img.save(buffered, format="PNG")
