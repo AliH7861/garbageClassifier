@@ -15,6 +15,7 @@ httpx
 pytest-mock   
 pytest-cov              # For coverage report
 streamlit
+streamlit-cookies-manager
 streamlit-autorefresh   # If you use it
 python-multipart        # File uploads with FastAPI
 passlib[bcrypt]         # Secure password hashing
