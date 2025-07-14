@@ -1,6 +1,7 @@
 fastapi
 uvicorn
 sqlalchemy
+psycopg2-binary         # Needed for PostgreSQL
 python-dotenv
 requests
 pillow
@@ -9,5 +10,11 @@ tensorflow
 pandas
 matplotlib
 plotly
-pytest      # For CI testing!
-streamlit   # If you're using Streamlit too
+pytest
+pytest-mock             # For mock testing
+pytest-cov              # For coverage report
+streamlit
+streamlit-autorefresh   # If you use it
+python-multipart        # File uploads with FastAPI
+passlib[bcrypt]         # Secure password hashing
+python-jose             # JWT auth, optional
