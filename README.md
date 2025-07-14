@@ -52,3 +52,83 @@ cd ecobin-ai
 
 ```bash
 pip install -r requirements.txt
+
+## Set up environment variables
+
+1. Copy `.env.example` to `.env`
+2. Fill in `DATABASE_URL` (your PostgreSQL URI) and any other required variables
+
+## Prepare the database
+
+1. Create a new PostgreSQL database
+2. Run migration scripts (if provided), or let SQLAlchemy auto-create tables on first run
+
+## Run the application
+
+```bash
+streamlit run dashboard.py
+# OR
+python main.py
+
+## Usage
+
+- Sign up or log in.
+- Upload an image of your waste item for an instant bin recommendation.
+- Edit your bins:
+  - Change names/images to fit your home
+  - Revert to Durham Region defaults anytime
+- Visit your dashboard:
+  - See recent submissions, analytics, and personalized charts
+
+**Privacy:**  
+Your submissions & customizations are private and visible only to you.
+
+---
+
+## Configuration
+
+- **Bins:**  
+  Default bins match Durham Region categories. You can upload your own images and rename bins at any time.
+
+- **Environment Variables:**  
+  `DATABASE_URL` (PostgreSQL) required—set this in your `.env` file.
+
+- **Data Storage:**  
+  User accounts, submissions, and analytics are stored securely in PostgreSQL. Uploaded images are processed and deleted after 30 minutes for privacy.
+
+---
+
+## Tech Stack
+
+- **Backend:** Python, FastAPI, SQLAlchemy
+- **AI Model:** ResNet50 (TensorFlow)
+- **Frontend/UI:** Streamlit, HTML, CSS, JavaScript
+- **Database:** PostgreSQL
+- **Dev Environment:** Jupyter Notebook
+
+---
+
+## Contributing
+
+We welcome all contributions!
+
+1. Fork the repository
+2. Create a feature branch:
+    ```bash
+    git checkout -b feature/your-feature
+    ```
+3. Commit your changes:
+    ```bash
+    git commit -am "Add new feature"
+    ```
+4. Push to your branch:
+    ```bash
+    git push origin feature/your-feature
+    ```
+5. Open a Pull Request and describe your changes.
+
+---
+
+## Testing
+
+Automated and manual tests for major features are included.
