@@ -91,7 +91,7 @@ def render_image_with_button(img_str, container):
 # Styled box start
 st.markdown("""
 <div style='border: 1px solid #ccc; padding: 25px; border-radius: 10px; background-color: #f9f9f9; margin-bottom: 20px;'>
-<h2 style='text-align:center;'>Upload Original and View Updated Image</h2>
+<h2 style='text-align:center;'>EcoBin AI</h2>
 """, unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
