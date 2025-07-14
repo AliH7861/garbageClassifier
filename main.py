@@ -17,7 +17,7 @@ app = FastAPI()
 
 
 MODEL_PATH = "my_model.keras"
-MODEL_URL = "https://github.com/YourUser/YourRepo/releases/download/v1.0/my_model.keras"  # <--- PUT YOUR LINK HERE
+MODEL_URL = "https://drive.google.com/file/d/13AVnUXvhEcjFH6JG6hfC-i5DilU91rba/view?usp=drive_link"  
 
 def download_model_if_missing():
     if not os.path.exists(MODEL_PATH):
