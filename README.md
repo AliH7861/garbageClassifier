@@ -34,3 +34,34 @@ EcoBin AI is a smart web application that helps you classify household waste usi
 
 - **User Accounts**  
     Swap default bin images/names with your own for a personalized experience. Revert to official bins anytime.
+
+## Getting Started
+### Dependencies
+* Python 3.8+
+* pip (Python package manager)
+* Visual Studio Code
+
+### Installing
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/your-repo.git
+   cd your-repo
+
+2. Install required packages:
+
+   ```bash
+   pip install -r requirements.txt
+
+### Executing Program
+1. Terminal 01: FastAPI Setup
+
+   ```bash
+   uvicorn main:app --reload
+
+2. Terminal 02: Frontend Setup
+
+   ```bash
+   streamlit run login.py
+
+## Usage
