@@ -43,3 +43,12 @@ EcoBin AI is a smart web application that helps you classify household waste usi
 
 ### Installation
 
+First, make sure you have Python 3.8+ installed on your machine. Then, install all the required packages by running:
+
+```bash
+pip install -r requirements.txt
+
+First, make sure you have Python 3.8+ installed on your machine. Then, install all the required packages by running:
+
+```bash
+pip install -r requirements.txt
