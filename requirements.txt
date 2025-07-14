@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+python-dotenv
+requests
+pillow
+numpy
+tensorflow
+pandas
+matplotlib
+plotly
+pytest      # For CI testing!
+streamlit   # If you're using Streamlit too
