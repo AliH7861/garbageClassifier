@@ -53,7 +53,7 @@ EcoBin AI is a smart web application that helps you classify household waste usi
    ```bash
    pip install -r requirements.txt
 
-### Executing
+### Executing Program
 1. Terminal 01: FastAPI Setup
 
    ```bash
@@ -65,3 +65,36 @@ EcoBin AI is a smart web application that helps you classify household waste usi
    streamlit run login.py
 
 ## Usage
+
+1. Sign up and create your own account
+
+2. Use the username and password to login
+
+3. Upload an Image of a household waste item
+
+4. Click the Submit Button to let an AI model predict the correct bin (e.g., Green Bin, Blue Box, Garbage).
+
+5. View your personalized dashboard for:
+   - Recent submissions
+   - Analytics (pie charts, total scans)
+
+6. Customize bins (rename or change image) or revert to defaults.   
+
+## Configuration
+Before running the app, make sure to set up the required environment variables.
+
+1. **Create a `.env` file** in the root directory (you can copy from `.env.example`).
+
+2. **Set your environment variables**, especially:
+
+``` env
+DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<dbname>
+```
+3. **Custom Bin Pictures**  
+   You can replace the default bin images with your own by submitting pictures through the `picture.py` script.
+
+   - This allows you to personalize how each bin looks when the AI model predicts.
+   - You can revert back to the default Durham Region images anytime.
+
+   > Make sure the uploaded image names match the category keys or update the logic in `picture.py` accordingly.
+
