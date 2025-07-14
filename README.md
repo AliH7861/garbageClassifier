@@ -53,7 +53,7 @@ EcoBin AI is a smart web application that helps you classify household waste usi
    ```bash
    pip install -r requirements.txt
 
-### Executing Program
+### Executing
 1. Terminal 01: FastAPI Setup
 
    ```bash
