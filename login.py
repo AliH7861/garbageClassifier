@@ -1,6 +1,14 @@
 import streamlit as st
 import requests
 from streamlit_cookies_manager import EncryptedCookieManager
+import threading
+from main import app
+import uvicorn
+
+def run_fastapi():
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+
+threading.Thread(target=run_fastapi, daemon=True).start()
 
 # --- Setup cookies ---
 cookies = EncryptedCookieManager(
