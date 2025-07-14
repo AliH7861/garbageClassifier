@@ -98,3 +98,88 @@ DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<dbname>
 
    > Make sure the uploaded image names match the category keys or update the logic in `picture.py` accordingly.
 
+
+##  Tech Stack
+
+**Programming Language**
+- Python 3.11 – used across backend, ML logic, and frontend scripting
+
+**Frontend**
+- **Streamlit** – interactive UI for users to upload images, track bin predictions, and view analytics
+- **Plotly** – used to render beautiful pie, bar, and line charts dynamically
+- **Pandas** – for data manipulation and display in tables
+- **Matplotlib** – additional plotting support
+- **Custom CSS + Google Fonts** – for styling and UI polish (`Poppins`, `Montserrat`, `Open Sans`)
+- **streamlit-cookies-manager** – manages login sessions with encrypted cookies
+- **streamlit_autorefresh** – auto-refreshes dashboard every 10 seconds
+
+**Backend**
+- **FastAPI** – serves predictions and API endpoints
+- **SQLAlchemy** – ORM for PostgreSQL
+- **dotenv** – for loading env variables
+- **requests** – makes API calls from Streamlit to FastAPI backend
+- **hashlib** – for password hashing and user auth
+
+**Machine Learning**
+- **TensorFlow / Keras** – loads and runs ResNet50 image classification model
+- **PIL (Pillow)** – reads and resizes images
+- **NumPy** – handles array transformations for model input/output
+
+**Database**
+- **PostgreSQL** – stores user accounts, image submissions, prediction results, and analytics
+- **Railway** – cloud hosting for the PostgreSQL database and optionally the backend
+
+**Other Features**
+- **EncryptedCookieManager** – keeps login sessions persistent without exposing raw credentials
+- **Image Upload + Customization** – users can replace bin images with personal ones
+- **Modular Routing** – app split across multiple Streamlit pages (`login.py`, `dashboard.py`, `pictures.py`, etc.)
+
+## Contributing
+
+We welcome contributions to improve this project! To contribute:
+
+1. Fork this repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m "Add feature"`)
+4. Push to your branch (`git push origin feature-name`)
+5. Create a pull request
+
+Please make sure your code follows our style and includes relevant tests/documentation.
+
+## Testing
+Before pushing any changes, please test your code:
+
+For backend (FastAPI):
+```bash
+# Example with pytest
+pytest tests/
+```
+
+## FAQ
+
+**Q: What images can I upload?**  
+A: You can upload any image that is less than 200MB and in JPG, JPEG, or PNG format.
+
+---
+
+
+**Q: How do I reset my bins to default?**  
+A: Use the **“Return Original”** button on the Pictures page to restore the official Durham Region bin images.
+
+---
+
+
+**Q: Is this app only for Durham Region?**  
+A: No! You can fully customize the bin categories and images to match any region or your personal needs.
+
+---
+
+**Q: How is my data stored?**  
+A: Each user’s account, bin customizations, and analytics are stored securely in a PostgreSQL database.  
+Personal bin images are **temporarily stored** during processing and deleted automatically within 30 minutes.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+You are free to use, modify, and distribute this software for personal or commercial purposes,  
+provided that you include the original license file in any redistributed versions.
