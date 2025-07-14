@@ -11,6 +11,7 @@ pandas
 matplotlib
 plotly
 pytest
+httpx
 pytest-mock             # For mock testing
 pytest-cov              # For coverage report
 streamlit
